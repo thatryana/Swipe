@@ -41,6 +41,8 @@ Swipe can take an optional second parameter– an object of key/value settings:
 
 -	**callback** Function - runs at the end of any slide change. *(effective for updating position indicators/counters)*
 
+-	**items** Integer *(default:1)* - Number of items to be shown at one time.
+
 ### Example
 
 ``` js
@@ -53,7 +55,8 @@ window.mySwipe = new Swipe(document.getElementById('slider'), {
 
 	  // do something cool
 
-	}
+	},
+	items: 3
 });
 
 ```
